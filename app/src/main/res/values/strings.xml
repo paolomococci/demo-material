@@ -1,0 +1,55 @@
+<resources>
+
+    <string name="app_name">Demo Material</string>
+
+    <string name="title_placeholder">Title</string>
+    <string name="news_placeholder">News</string>
+    <string name="sports_info_placeholder">Here is some news</string>
+    <string name="default_icd">image content description</string>
+    <string name="subtitle_detail_text">
+        Some news about this sport concerns the athletes who practice it.
+    </string>
+
+    <string-array name="sports_titles">
+        <item>Baseball</item>
+        <item>Badminton</item>
+        <item>Basketball</item>
+        <item>Bowling</item>
+        <item>Cycling</item>
+        <item>Golf</item>
+        <item>Running</item>
+        <item>Football</item>
+        <item>Swimming</item>
+        <item>Ping-Pong</item>
+        <item>Tennis</item>
+    </string-array>
+
+    <string-array name="sports_images">
+        <item>@drawable/baseball</item>
+        <item>@drawable/badminton</item>
+        <item>@drawable/basketball</item>
+        <item>@drawable/bowling</item>
+        <item>@drawable/cycling</item>
+        <item>@drawable/golf</item>
+        <item>@drawable/running</item>
+        <item>@drawable/football</item>
+        <item>@drawable/swimming</item>
+        <item>@drawable/ping_pong</item>
+        <item>@drawable/tennis</item>
+    </string-array>
+
+    <string-array name="sports_info">
+        <item>Some Baseball news</item>
+        <item>Some Badminton news</item>
+        <item>Some Basketball news</item>
+        <item>Some Bowling news</item>
+        <item>Some Cycling news</item>
+        <item>Some Golf news!</item>
+        <item>Some Running news!</item>
+        <item>Some Football news!</item>
+        <item>Some Swimming news!</item>
+        <item>Some Ping-Pong news!</item>
+        <item>Some Tennis news!</item>
+    </string-array>
+
+</resources>
