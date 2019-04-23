@@ -21,9 +21,11 @@ package local.example.demomaterial
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.ItemTouchHelper
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import local.example.demomaterial.adapter.SportAdapter
+import local.example.demomaterial.model.Sport
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
@@ -36,9 +38,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val gridColumnCount = resources.getInteger(R.integer.default_column_grid)
+
         recyclerView = findViewById(R.id.recycler_view)
 
-        recyclerView!!.layoutManager = LinearLayoutManager(this)
+        recyclerView!!.layoutManager = GridLayoutManager(
+            this, gridColumnCount
+        )
 
         sportData = ArrayList()
 
@@ -47,12 +53,19 @@ class MainActivity : AppCompatActivity() {
 
         initializeData()
 
-        val helper = ItemTouchHelper(object : ItemTouchHelper.SimpleCallback(
+        val swipeDirs: Int
+        swipeDirs = if (gridColumnCount > 1) {
+            0
+        } else {
+            ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT
+        }
+
+        val helper = ItemTouchHelper(
+            object : ItemTouchHelper.SimpleCallback(
             ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT or
                     ItemTouchHelper.DOWN or ItemTouchHelper.UP,
-            ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT
+            swipeDirs
         ) {
-
             override fun onMove(
                 recyclerView: RecyclerView,
                 viewHolder: RecyclerView.ViewHolder,
@@ -79,19 +92,17 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initializeData() {
-        val sportsList = resources
-            .getStringArray(R.array.sports_titles)
-        val sportsInfo = resources
-            .getStringArray(R.array.sports_info)
-        val sportsImageResources = resources
-            .obtainTypedArray(R.array.sports_images)
+        val sportsList = resources.getStringArray(R.array.sports_titles)
+        val sportsInfo = resources.getStringArray(R.array.sports_info)
+        val sportsImageResources = resources.obtainTypedArray(R.array.sports_images)
 
         sportData!!.clear()
 
         for (i in sportsList.indices) {
             sportData!!.add(
                 Sport(
-                    sportsList[i], sportsInfo[i],
+                    sportsList[i],
+                    sportsInfo[i],
                     sportsImageResources.getResourceId(i, 0)
                 )
             )
