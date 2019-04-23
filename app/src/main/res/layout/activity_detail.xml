@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetailActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/sport_image_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/default_icd"
+                android:adjustViewBounds="true"/>
+
+        <TextView
+                android:id="@+id/title_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_placeholder"
+                android:layout_alignBottom="@id/sport_image_detail"
+                android:padding="@dimen/margin_and_padding_default"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                style="@style/TextAppearance.AppCompat.Headline"/>
+
+        <TextView
+                android:id="@+id/news_title_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sport_image_detail"
+                android:padding="@dimen/margin_and_padding_default"
+                android:text="@string/news_placeholder"
+                android:textColor="?android:textColorSecondary"
+                style="@style/TextAppearance.AppCompat.Subhead"/>
+
+        <TextView
+                android:id="@+id/sub_title_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/news_title_detail"
+                android:padding="@dimen/margin_and_padding_default"
+                android:text="@string/subtitle_detail_text"
+                style="@style/TextAppearance.AppCompat.Subhead"/>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
