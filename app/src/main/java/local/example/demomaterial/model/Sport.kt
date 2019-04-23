@@ -16,7 +16,7 @@
  *
  */
 
-package local.example.demomaterial
+package local.example.demomaterial.model
 
 class Sport(
     internal val title: String,
