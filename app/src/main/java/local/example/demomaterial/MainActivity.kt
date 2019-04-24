@@ -16,7 +16,7 @@
  *
  */
 
-package local.example.demomaterial
+package local.example.sportnews
 
 import android.os.Bundle
 import android.view.View
@@ -24,8 +24,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
-import local.example.demomaterial.adapter.SportAdapter
-import local.example.demomaterial.model.Sport
+import local.example.sportnews.adapter.SportAdapter
+import local.example.sportnews.model.Sport
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
