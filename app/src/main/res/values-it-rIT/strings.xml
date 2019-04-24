@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Notizie Sportive</string>
+
+    <string name="title_placeholder">Titolo</string>
+    <string name="news_placeholder">Notizie</string>
+    <string name="sports_info_placeholder">Le ultimissime novit&#224;</string>
+    <string name="default_icd">descrizione dell&#8217;immagine</string>
+    <string name="subtitle_detail_text">
+        Alcune notizie dello sport in oggetto oltre che sugli atleti che lo praticano.
+    </string>
+
+    <string-array name="sports_titles">
+        <item>Baseball</item>
+        <item>Volano</item>
+        <item>Pallacanestro</item>
+        <item>Bowling</item>
+        <item>Ciclismo</item>
+        <item>Golf</item>
+        <item>Corsa</item>
+        <item>Calcio</item>
+        <item>Nuoto</item>
+        <item>Ping-Pong</item>
+        <item>Tennis</item>
+    </string-array>
+
+    <string-array name="sports_images">
+        <item>@drawable/baseball</item>
+        <item>@drawable/badminton</item>
+        <item>@drawable/basketball</item>
+        <item>@drawable/bowling</item>
+        <item>@drawable/cycling</item>
+        <item>@drawable/golf</item>
+        <item>@drawable/running</item>
+        <item>@drawable/football</item>
+        <item>@drawable/swimming</item>
+        <item>@drawable/ping_pong</item>
+        <item>@drawable/tennis</item>
+    </string-array>
+
+    <string-array name="sports_info">
+        <item>Alcune notizie su Baseball</item>
+        <item>Alcune notizie sul Volano</item>
+        <item>Alcune notizie sulla Pallacanestro</item>
+        <item>Alcune notizie sul Bowling</item>
+        <item>Alcune notizie di Ciclismo</item>
+        <item>Alcune notizie sul Golf</item>
+        <item>Acune notizie sulla Corsa</item>
+        <item>Alcune notizie a proposito di calcio</item>
+        <item>Alcune notizie sul nuoto</item>
+        <item>Alcune notizie sul Ping-Pong</item>
+        <item>Alcune notizie sul Tennis</item>
+    </string-array>
+
+</resources>
