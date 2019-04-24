@@ -16,7 +16,7 @@
  *
  */
 
-package local.example.demomaterial
+package local.example.sportnews
 
 import android.os.Bundle
 import android.widget.ImageView
