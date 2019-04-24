@@ -1,2 +1,2 @@
-# demo-material
-Demo App Android
+# sport-news
+Demo App Android regarding Material
