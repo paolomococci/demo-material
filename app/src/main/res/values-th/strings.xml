@@ -1,3 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <string name="app_name">ข่าวกีฬา</string>
+
+    <string name="title_placeholder">หัวข้อเรื่อง</string>
+    <string name="news_placeholder">ข่าว</string>
+    <string name="sports_info_placeholder">ข่าวล่าสุด</string>
+    <string name="default_icd">ลักษณะของภาพ</string>
+    <string name="subtitle_detail_text">
+        ข่าวกีฬาบางอย่างเกี่ยวกับนักกีฬาที่ฝึกซ้อมและรวมอย่างอื่นอีกมากมาย
+    </string>
+
+    <string-array name="sports_titles">
+        <item>เบสบอล</item>
+        <item>แบดมินตัน</item>
+        <item>บาสเกตบอล</item>
+        <item>โบว์ลิ่ง</item>
+        <item>การขี่จักรยาน</item>
+        <item>กอล์ฟ</item>
+        <item>วิ่ง</item>
+        <item>ฟุตบอล</item>
+        <item>ว่ายน้ำ</item>
+        <item>ปิงปอง</item>
+        <item>เทนนิส</item>
+    </string-array>
+
+    <string-array name="sports_images">
+        <item>@drawable/baseball</item>
+        <item>@drawable/badminton</item>
+        <item>@drawable/basketball</item>
+        <item>@drawable/bowling</item>
+        <item>@drawable/cycling</item>
+        <item>@drawable/golf</item>
+        <item>@drawable/running</item>
+        <item>@drawable/football</item>
+        <item>@drawable/swimming</item>
+        <item>@drawable/ping_pong</item>
+        <item>@drawable/tennis</item>
+    </string-array>
+
+    <string-array name="sports_info">
+        <item>ข่าวบางอย่างเกี่วยกับเบสบอล</item>
+        <item>ข่าวบางอย่างเกี่วยกับ แบดมินตัน</item>
+        <item>ข่าวบางอย่างเกี่วยกับ บาสเกตบอล</item>
+        <item>ข่าวบางอย่างเกี่วยกับ โบว์ลิ่ง</item>
+        <item>ข่าวบางอย่างเกี่วยกับ การขี่จักรยาน</item>
+        <item>ข่าวบางอย่างเกี่วยกับ กอล์ฟ</item>
+        <item>ข่าวบางอย่างเกี่วยกับ การวิ่ง</item>
+        <item>ข่าวบางอย่างเกี่วยกับ ฟุตบอล</item>
+        <item>ข่าวบางอย่างเกี่วยกับ การว่ายน้ำ</item>
+        <item>ข่าวบางอย่างเกี่วยกับ การเล่นปิงปอง</item>
+        <item>ข่าวบางอย่างเกี่วยกับ เทนนิส</item>
+    </string-array>
+
 </resources>
